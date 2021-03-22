@@ -1,0 +1,364 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .english-input {
+
+} */
+
+/* START STYLE  */
+#auth {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* LEFT SIDE  */
+#auth .left-wrapper {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: #2C3A47;
+    border-right: 2px solid #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#auth .left-wrapper .overlay  {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+#auth .left-wrapper .overlay img {
+   width: 100%;
+   opacity: 0.08;
+   height: 100%;
+   object-fit: cover;
+}
+#auth .left-wrapper .left-title{
+    display: block;
+    color: #f26d30;
+}
+#auth .left-wrapper .left-title h1{
+    font-size: 40px;
+}
+#auth .left-wrapper img {
+    width: 450px;
+}
+#auth .left-wrapper .left-footer span {
+    font-size: 14px;
+    color: #fff;
+}
+#auth .left-wrapper .left-footer span a {
+    font-size: 14px;
+    color: #f26d30;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+/* RIGHT SIDE  */
+#auth .auth-wrapper {
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#auth .auth-wrapper .overlay  {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+#auth .auth-wrapper .overlay img {
+   width: 100%;
+   opacity: 0.1;
+   height: 100%;
+   object-fit: cover;
+}
+#auth .auth-wrapper .auth-info .auth-image {
+    max-width: 150px;
+    margin: auto;
+}
+#auth .auth-wrapper .auth-info span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(132, 132, 132);
+    margin: 30px auto;
+    position: relative;
+}
+#auth .auth-wrapper .auth-info span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -65px;
+    width: 55px;
+    height: 2px;
+    background-color: #e6eaef;
+}
+#auth .auth-wrapper .auth-info span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -65px;
+    width: 55px;
+    height: 2px;
+    background-color: #e6eaef;
+}
+#auth .auth-wrapper .auth-info .auth-image a {
+    display: block;
+    text-decoration: none;
+}
+#auth .auth-wrapper .auth-info .auth-image a img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+#auth .auth-wrapper form {
+    width: 100%;
+    text-align: center;
+}
+#auth .auth-wrapper form .input-box{
+    position: relative;
+    display:inline;
+}
+#auth .auth-wrapper form .input-box:nth-child(2) {
+    margin-bottom: 20px;
+}
+#auth .auth-wrapper form .input-box .icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-25%);
+    border-left: 2px solid #e6eaef;
+    pointer-events: none;
+    z-index: -1;
+}
+#auth .auth-wrapper form .input-box .icon .fa {
+    font-size: 14px;
+    color: rgb(132, 132, 132);
+    padding-left: 8px;
+}
+#auth .auth-wrapper form .input-box label{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 5px;
+   font-size: 13px;
+   color: rgb(132, 132, 132);
+   font-weight: 400;
+   pointer-events: none;
+   transition: all .4s ease-in-out;
+}
+#auth .auth-wrapper form .input-box input{
+   width: 80%;
+   border: none;
+   outline: none;
+   height: 35px;
+   padding: 10px;
+   -webkit-border-radius: 0px;
+   -webkit-border: none;
+   -webkit-border-bottom: 1px solid #e6eaef;
+   border-bottom: 1px solid #e6eaef;
+   transition: all .4s ease-in-out;
+   font-size: 14px;
+   border-radius: 0px;
+   letter-spacing: 1px;
+   color: #f26d30;
+   margin-bottom: 40px;
+   background-color: transparent;
+ }
+ #auth .auth-wrapper form .input-box input:valid,
+ #auth .auth-wrapper form .input-box input:focus {
+    border-bottom: 1px solid #f26d30;
+ }
+ #auth .auth-wrapper form .input-box input:valid ~ label,
+ #auth .auth-wrapper form .input-box input:focus ~ label {
+     top: -15px!important;
+     left: 0px!important;
+     font-size: 11px;
+     color: #f26d30;
+ }
+ #auth .auth-wrapper form button {
+     border-radius: 5px;
+     cursor: pointer;
+     width: 80%;
+     margin: auto;
+     background-color: #f26d30;
+     border: 1px solid #f26d30;
+     border: none;
+     outline: none;
+     height: 35px;
+     font-size: 14px;
+     letter-spacing: 2px;
+     color: #fff;
+     line-height: 33px;
+     transition: all .4s ease-in-out;
+ }
+ #auth .auth-wrapper form button:hover {
+     background-color: #fff;
+     border: 1px solid #f26d30;
+     color: #576574;
+ }
+ #auth .auth-wrapper form .flex-box {
+     width: 80%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+ }
+
+#auth .auth-wrapper form .flex-box a,
+ #auth .auth-wrapper form .remmember {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(132, 132, 132);
+    font-weight: 400;
+    margin-bottom: 25px;
+    transition: all .4s ease-in-out;
+ }
+ #auth .auth-wrapper form .remmember:hover  input[ type="checkbox"]{
+     border: 1px solid #f26d30;
+ }
+ #auth .auth-wrapper form .remmember input[ type="checkbox"]:checked{
+    border: 1px solid #f26d30;
+}
+#auth .auth-wrapper form .remmember input[ type="checkbox"]:checked ~ label{
+    color: #f26d30;
+}
+ #auth .auth-wrapper form .flex-box a:hover,
+ #auth .auth-wrapper form .remmember:hover {
+    color: #f26d30;
+ }
+ #auth .auth-wrapper form .remmember label {
+     padding-left: 10px;
+     cursor: pointer;
+ }
+ #auth .auth-wrapper form .remmember input[ type="checkbox"] {
+     cursor: pointer;
+     appearance: none;
+     position: relative;
+     vertical-align: middle;
+     border: 1px solid #4e4f50;
+     background-color: #fff!important;
+     width: 12px;
+     height: 12px;
+     -webkit-width: 12px;
+     -webkit-height:12px;
+     -webkit-border: 1px solid #4e4f50;
+     -webkit-border-radius: 2px!important;
+     -webkit-background-color: #fff!important;
+     border-radius: 2px;
+     transition: all .4s ease-in-out;
+     outline: none;
+ }
+    #auth .auth-wrapper form .remmember input[ type="checkbox"]:checked::after {
+        font-family: 'FontAwesome';
+        content: '\f00c';
+        position: absolute;
+        top: -2px;
+        left: 0;
+        font-size: 10px;
+        color: #565656!important;
+        -webkit-color: #565656!important;
+    }
+    #auth .auth-wrapper form .remmember input[ type="checkbox"]:checked {
+         background-color: #fff!important;
+         appearance: none;
+         -webkit-appearance: none;
+        -webkit-background-color: #fff!important;
+    }
+
+    #auth .auth-wrapper form input[ type="text"], #auth .auth-wrapper form input[ type="password"] {
+        color:#565656;
+        text-shadow: 0.2px 0.1px 0.5px #808080 !important;
+        font-size: 0.87em;
+    }
+
+/* END STYLE  */
+
+
+/* MEDIA  */
+@media (max-height: 450px){
+    #auth .auth-wrapper {
+        position: absolute;
+        top: 250px!important;
+    }
+    #auth .auth-wrapper form button {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #auth .left-wrapper .left-title h1{
+        font-size: 30px;
+    }
+    #auth .left-wrapper img {
+        width: 350px;
+    }
+    #auth .auth-wrapper form .flex-box,
+    #auth .auth-wrapper form button,
+    #auth .auth-wrapper form .input-box input {
+        width: 85%;
+    }
+}
+@media (max-width: 991px) {
+    #auth .left-wrapper  {
+        display: none;
+    }
+    #auth .auth-wrapper {
+        
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: auto;
+        min-height: 80vh;
+    }
+}
+@media (max-width: 420px) {
+    #auth .auth-wrapper .auth-info span {
+        font-size: 14px;
+    }
+    #auth .auth-wrapper .auth-info span:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -45px;
+        width: 35px;
+        height: 2px;
+        background-color: #e6eaef;
+    }
+    #auth .auth-wrapper .auth-info span:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -45px;
+        width: 35px;
+        height: 2px;
+        background-color: #e6eaef;
+    }
+} 
