@@ -140,7 +140,8 @@ body {
 }
 #auth .auth-wrapper form .input-box{
     position: relative;
-    display:inline;
+    display: inline;
+    display: ruby;
 }
 #auth .auth-wrapper form .input-box:nth-child(2) {
     margin-bottom: 20px;
@@ -149,10 +150,10 @@ body {
     position: absolute;
     right: 5px;
     top: 50%;
-    transform: translateY(-25%);
+    transform: translateY(-28%);
     border-left: 2px solid #e6eaef;
     pointer-events: none;
-    z-index: -1;
+    /* z-index: -1; */
 }
 #auth .auth-wrapper form .input-box .icon .fa {
     font-size: 14px;
@@ -187,6 +188,7 @@ body {
    color: #f26d30;
    margin-bottom: 40px;
    background-color: transparent;
+   box-shadow: 0 0 0 30px white inset;
  }
  #auth .auth-wrapper form .input-box input:valid,
  #auth .auth-wrapper form .input-box input:focus {
